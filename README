@@ -1,0 +1,38 @@
+#O projeto consiste na criação de uma api para servir ao app -JuniorRH
+a api irá oferecer o cadastro de empresas juniors e voluntários que
+precisam gerenciar melhor os componentes de suas equipes, ao cadastrar um novo
+voluntário, o app lançara um termo de adesão para o email do voluntario que for marcado como aceito
+terá uma tela de gestão de pessoas, onde inicialemnte servirá para manutenção de suas funcções e 
+departamentos que o mesmo passou dentro da EJ.
+Ao marcar uma a data de termino da função, será gerado um certificado que estara disponivel para consulta
+e emissão.
+
+Tabelas app juniors
+EmpresasJunior
+Funçao
+HistoricoMembro
+Voluntario
+Membro
+Departamento
+Historico
+
+Tabelas app Certificados
+Hitorico
+certificado (data emissão)
+
+# Configuração do 
+Crie um ambiente virtual em python para instalar as dependencias e isolar o projeto de sua maquina e as dependencias
+Rode o comando para instalar os requrimentes do ssitemas e as dependencias necessárias para o django
+Crie um arquivo .env e nele, incluir as variáveis do sistemas, como secretkey do django e suas credendeciais da api e do banco de dados
+Crie um ambiente virtual em python para ins
+## Preparando ambiente do banco de dados
+execute os comandos:
+
+~~~~python
+py manage.py makemigrations
+#em seguinda
+py manage.py migrate
+~~~~
+
+##
+
