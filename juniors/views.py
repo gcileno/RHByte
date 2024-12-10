@@ -10,6 +10,9 @@ class JuniorsRetrivieUpDelView(generics.RetrieveUpdateDestroyAPIView):
     queryset = EmpresasJuinior.objects.all()
     serializer_class = JuniorSerializer
 
+class VoluntarioCreateView(generics.CreateAPIView):
+    serializer_class = VoluntarioSerializer
+
 class VoluntarioListView(generics.ListCreateAPIView):
     queryset = Voluntario.objects.all()
     serializer_class = VoluntarioSerializer
@@ -17,6 +20,17 @@ class VoluntarioListView(generics.ListCreateAPIView):
 class VoluntarioRetrivieUpDelView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Voluntario.objects.all()
     serializer_class = VoluntarioSerializer
+
+class InforCreateView(generics.CreateAPIView):
+    serializer_class = VoluntarioSerializer
+
+class InformacaoListCreateView(generics.ListCreateAPIView):
+    queryset = Informacoes.objects.all()
+    serializer_class = InformationSerializer
+
+class InformacaoRetriveUpDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Informacoes.objects.all()
+    serializer_class = InformationSerializer
 
 # Views para Membro
 class MembroListView(generics.ListCreateAPIView):

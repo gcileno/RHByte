@@ -62,7 +62,7 @@ class Membro(models.Model):
         "Voluntario",
         on_delete=models.DO_NOTHING,
         null=True, blank=True,
-        related_name= "membros"
+        related_name= "membro"
     )
     empresa_junior= models.ForeignKey(
         EmpresasJuinior, 
@@ -74,7 +74,7 @@ class Membro(models.Model):
         "Departamento", 
         on_delete=models.CASCADE, 
         null=True, blank=True,
-        related_name="membros")
+        related_name="membros_departamento")
     
     data_entrada = models.DateField(null=True, blank=True)
     data_saida = models.DateField(null=True, blank=True)
